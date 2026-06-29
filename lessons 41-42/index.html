@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Транс-форма</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <h2>Ваши личные данные</h2>
+      <fieldset class="fset-1">
+        <label>
+          <h3>Ваше имя</h3>
+          <input
+            class="field"
+            placeholder="Имя"
+            name="name"
+            type="text"
+            required
+          />
+        </label>
+        <label>
+          <h3>Ваш возраст</h3>
+          <input
+            class="field"
+            placeholder="Возраст"
+            name="age"
+            type="number"
+            required
+          />
+        </label>
+        <label>
+          <h3>Ваш номер телефона</h3>
+          <input
+            class="field"
+            placeholder="Номер телефона"
+            name="phone"
+            type="tel"
+            required
+          />
+        </label>
+        <label>
+          <h3>Ваша почта</h3>
+          <input
+            class="field"
+            placeholder="Почта"
+            name="email"
+            type="email"
+            required
+          />
+        </label>
+      </fieldset>
+      <fieldset class="fset-2">
+        <h3>Сообщение</h3>
+        <textarea
+          class="text-area"
+          placeholder="Ваше сообщение"
+          name="message"
+          required
+        ></textarea>
+        <input class="check-box" name="checkbox" type="checkbox" required />
+        Я принимаю правила
+      </fieldset>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </body>
+</html>
