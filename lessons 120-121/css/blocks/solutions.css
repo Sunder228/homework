@@ -1,0 +1,13 @@
+.solutions__button {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--main-color);
+}
+
+.solutions__icon {
+    stroke: var(--main-color);
+}
