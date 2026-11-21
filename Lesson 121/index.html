@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./js/index.js" type="module"></script>
+    <title>Shop.co</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <button
+          class="header__burger burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="header__menu"
+        >
+          <svg width="24" height="24">
+            <use
+              class="burger__icon-menu"
+              href="./icons/sprite.svg#burger"
+            ></use>
+            <!-- <use
+              class="burger__icon-cross"
+              href="./icons/sprite.svg#cross"
+            ></use> -->
+          </svg>
+        </button>
+        <a class="logo header__logo" href="#">shop.co</a>
+        <nav
+          class="menu header__menu"
+          id="header__menu"
+          aria-label="Главное меню"
+        >
+          <ul class="menu__list">
+            <li class="menu__item">
+              <button class="menu__button menu__link">
+                Магазин
+                <div class="menu__button-mark">
+                  <svg class="menu__button-mark-icon" width="16" height="16">
+                    <use href="./icons/sprite.svg#mark"></use>
+                  </svg>
+                </div>
+              </button>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#discounts">Скидки</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#new">Новые поступления</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#brands">Бренды</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__controls">
+          <form class="header__search-form" action="/search">
+            <button
+              class="header__search-button"
+              title="Поиск"
+              aria-label="Поиск"
+            >
+              <svg
+                class="header__search-icon"
+                width="24"
+                height="24"
+                fill-opacity="0.4"
+              >
+                <use href="./icons/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <input
+              class="header__search-input"
+              type="search"
+              name="search"
+              placeholder="Искать товары..."
+            />
+          </form>
+          <div class="header__actions">
+            <button
+              class="header__actions-button header__actions-search"
+              title="Поиск"
+              aria-label="Поиск"
+            >
+              <svg class="header__search-icon" width="24" height="24">
+                <use href="./icons/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <button
+              class="header__actions-button"
+              title="Корзина"
+              aria-label="Корзина"
+            >
+              <svg class="header-actions__icon" width="24" height="24">
+                <use href="./icons/sprite.svg#cart"></use>
+              </svg>
+            </button>
+            <button
+              class="header__actions-button"
+              title="Профиль"
+              aria-label="Профиль"
+            >
+              <svg class="header-actions__icon" width="24" height="24">
+                <use href="./icons/sprite.svg#profile"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
