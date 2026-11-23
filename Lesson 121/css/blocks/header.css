@@ -20,6 +20,23 @@
     gap: clamp(1rem, -2.321rem + 5.36vw, 2.5rem);
 }
 
+@media (width <= 992px) {
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--bg-color);
+    z-index: 3;
+}
+
+.header__container > :not(.header__menu) {
+    position: relative;
+    z-index: 4;
+}
+
+}
+
 .header__logo {
     position: relative;
     /* top: -4px; */
